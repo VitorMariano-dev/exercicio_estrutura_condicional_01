@@ -139,6 +139,53 @@ public class Main {
 			System.out.printf("R$ %.2f%n", imposto);
 		}
 		
+		// EXEMPLO DE OPERADORES CUMULATIVOS //
+		
+		int minutos = sc.nextInt();
+		double conta = 50.0;
+		if (minutos > 100) {
+			// conta = conta +(minutos - 100) * 2; ESSE DAQUI É o Jeito extenso //
+			conta += (minutos - 100) * 2; // ESSE NADA MAIS É QUE O DE CIMA PORÉM DE FORMA COMPACTA AMBOS ESTÃO CERTOS //
+		}
+		
+		System.out.printf("Valor da conta = R$ %.2f%n", conta);
+		
+		
+		
+		// ECEMPLO DE COMO UTILIZAR O SWITCH CASE //
+		
+		int diaSemana = sc.nextInt();
+		String dia;
+		
+		switch (diaSemana) {
+		case 1:
+			dia = "doming";
+			break;
+		case 2:
+			dia = "segunda";
+			break;
+		case 3:
+			dia = "terça";
+			break;
+		case 4:
+			dia = "quarta";
+			break;
+		case 5:
+			dia = "quinta";
+			break;
+		case 6:
+			dia = "sexta";
+			break;
+		case 7:
+			dia ="sabado";
+			break;
+		default:
+			dia = "valor invalido";
+			break;
+		}
+		
+		System.out.println("Dia da semana: " + dia);
+		
 		
 		
 		sc.close();
